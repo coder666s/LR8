@@ -11,7 +11,7 @@ const storage = diskStorage({
 });
 
 function checkFileType(file, cb) {
-    const filetypes = /jpg|JPG|png|PNG/;
+    const filetypes = /jpg|JPG|jpeg|JPEG|png|PNG/;
     const extname = filetypes.test(_extname(file.originalname).toLowerCase()); 
     const mimetype = filetypes.test(file.mimetype); 
 
